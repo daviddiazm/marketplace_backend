@@ -1,7 +1,7 @@
 import { DataTypes } from "sequelize";
 import { sequelize } from "../database/database.js";
 
-export const Task = sequelize.define('taks',{
+const Task = sequelize.define('taks',{
   id : {
     type:DataTypes.INTEGER,
     primaryKey: true,
@@ -15,3 +15,6 @@ export const Task = sequelize.define('taks',{
     defaultValue: false
   }
 })
+
+
+export default Task
